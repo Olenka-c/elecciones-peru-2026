@@ -31,3 +31,15 @@ Proyecto colaborativo con scripts, datos y resultados de análisis.
 
 **Objetivo:**  
 Estructurar el repositorio, documentar la metodología y publicar los resultados mediante GitHub Pages.
+
+#Prompt – Rol 3
+
+**Contexto:**  
+Se cuenta con titulares electorales de la sección “Elecciones” de La República,
+extraídos y limpiados previamente, correspondientes al periodo previo a las
+Elecciones Generales del Perú 2026.
+
+**Objetivo:**  
+Analizar la agenda temática y el tono discursivo de los titulares mediante
+frecuencia de palabras y análisis de sentimiento, e interpretar qué revelan
+estos patrones sobre la agenda mediática del medio.
