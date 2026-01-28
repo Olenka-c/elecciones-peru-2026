@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Agenda electoral Perú 2026</title>
+  <title>Agenda mediática electoral – Perú 2026</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -10,20 +10,33 @@
       background-color: #f8f9fa;
       color: #222;
     }
-    h1, h2 {
+    h1, h2, h3 {
       color: #8b0000;
     }
-    section {
+    table {
+      border-collapse: collapse;
+      width: 70%;
       margin-bottom: 30px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #e9ecef;
+    }
+    section {
+      margin-bottom: 40px;
     }
   </style>
 </head>
 <body>
 
-<h1>Agenda mediática electoral – Perú 2026</h1>
+<h1>Agenda mediática electoral en Perú – Elecciones Generales 2026</h1>
 
 <section>
-  <h2>Pregunta central</h2>
+  <h2>Pregunta de investigación</h2>
   <p>
     ¿Qué temas predominan en las portadas digitales de la sección “Elecciones”
     de La República durante el periodo previo a las Elecciones Generales del Perú 2026?
@@ -35,38 +48,21 @@
   <ul>
     <li>Web scraping de titulares electorales</li>
     <li>Limpieza y normalización de texto</li>
-    <li>Análisis de frecuencia y sentimiento</li>
+    <li>Análisis de frecuencia léxica</li>
+    <li>Análisis de sentimiento</li>
   </ul>
 </section>
 
 <section>
-  <h2>Análisis NLP</h2>
-  <p>
-    El análisis de frecuencia léxica y sentimiento muestra que la cobertura
-    electoral está dominada por temas institucionales, fallos electorales
-    y fiscalización de candidaturas. Predomina un tono neutral, con presencia
-    significativa de sentimiento negativo asociado a controversias legales.
-  </p>
-</section>
+  <h2>Agenda temática – Palabras más frecuentes</h2>
 
-<section>
-  <h2>Resultados principales</h2>
-  <p>
-    El análisis muestra una agenda dominada por la fiscalización de candidaturas,
-    decisiones de organismos electorales y verificación de información.
-    La cobertura prioriza controversias legales e institucionales por encima
-    de propuestas programáticas.
-  </p>
-</section>
-
-<section>
-  <h2>Conclusión</h2>
-  <p>
-    La sección “Elecciones” de La República construye un escenario preelectoral
-    marcado por la vigilancia, el control legal y la tensión institucional,
-    reflejando un clima electoral altamente fiscalizado de cara a 2026.
-  </p>
-</section>
-
-</body>
-</html>
+  <table>
+    <tr>
+      <th>Palabra</th>
+      <th>Frecuencia</th>
+    </tr>
+    <tr><td>Perú</td><td>5</td></tr>
+    <tr><td>electoral</td><td>4</td></tr>
+    <tr><td>carrera</td><td>3</td></tr>
+    <tr><td>millones</td><td>2</td></tr>
+    <tr><td>JNE</td><td>2<
