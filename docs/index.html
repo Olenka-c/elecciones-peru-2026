@@ -2,15 +2,16 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Agenda mediática electoral – Perú 2026</title>
+  <title>Análisis de la agenda mediática – La República</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 40px;
       background-color: #f8f9fa;
       color: #222;
+      line-height: 1.6;
     }
-    h1, h2 {
+    h1, h2, h3 {
       color: #8b0000;
     }
     table {
@@ -21,92 +22,128 @@
     th, td {
       border: 1px solid #ccc;
       padding: 8px;
+      vertical-align: top;
     }
     th {
       background-color: #e9ecef;
     }
     section {
-      margin-bottom: 40px;
+      margin-bottom: 50px;
+    }
+    .nota {
+      font-style: italic;
+      color: #555;
     }
   </style>
 </head>
 
 <body>
 
-<h1>Agenda mediática electoral en Perú – Elecciones Generales 2026</h1>
+<h1>Trabajo Final – Análisis de la agenda mediática electoral en La República</h1>
 
 <section>
-  <h2>Pregunta de investigación</h2>
+  <h2>Contexto del estudio</h2>
   <p>
-    ¿Qué temas predominan en las portadas digitales de la sección “Elecciones”
-    de La República durante el periodo previo a las Elecciones Generales del Perú 2026?
+    Este trabajo analiza los titulares publicados en la sección <strong>“Elecciones”</strong>
+    del diario digital <em>La República</em>, con el objetivo de identificar los temas
+    predominantes y el tono discursivo de la cobertura mediática durante el periodo
+    previo a las Elecciones Generales del Perú 2026.
   </p>
 </section>
 
 <section>
-  <h2>Agenda temática</h2>
+  <h2>Pregunta de investigación</h2>
+  <p>
+    <strong>¿Qué temas predominan en las portadas digitales de la sección “Elecciones”
+    de La República durante el periodo previo a las Elecciones Generales del Perú 2026?</strong>
+  </p>
+</section>
+
+<section>
+  <h2>Metodología</h2>
+  <ul>
+    <li><strong>Extracción:</strong> scraping de titulares desde la web de La República.</li>
+    <li><strong>Procesamiento:</strong> limpieza de texto, eliminación de duplicados y clasificación temática.</li>
+    <li><strong>Análisis:</strong> frecuencia léxica y análisis de sentimiento con modelos de NLP.</li>
+  </ul>
+  <p class="nota">
+    El análisis se realizó a partir de titulares extraídos el 25 de enero de 2026,
+    lo que constituye una “fotografía” diaria de la agenda electoral.
+  </p>
+</section>
+
+<section>
+  <h2>Estructura del repositorio</h2>
+  <ul>
+    <li><strong>/code:</strong> scripts en Python para scraping y procesamiento.</li>
+    <li><strong>/data:</strong> archivos CSV generados en las distintas etapas del análisis.</li>
+    <li><strong>/docs:</strong> visualización web del análisis final.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Agenda temática – Palabras más frecuentes</h2>
   <table>
     <tr><th>Palabra</th><th>Frecuencia</th></tr>
     <tr><td>Perú</td><td>5</td></tr>
     <tr><td>electoral</td><td>4</td></tr>
     <tr><td>carrera</td><td>3</td></tr>
-    <tr><td>millones</td><td>2</td></tr>
     <tr><td>JNE</td><td>2</td></tr>
-    <tr><td>abril</td><td>2</td></tr>
     <tr><td>JEE</td><td>2</td></tr>
-    <tr><td>información</td><td>2</td></tr>
-    <tr><td>senado</td><td>2</td></tr>
-    <tr><td>infundada</td><td>2</td></tr>
-    <tr><td>elecciones</td><td>2</td></tr>
-    <tr><td>unidos</td><td>2</td></tr>
-    <tr><td>leonela</td><td>2</td></tr>
-    <tr><td>labra</td><td>2</td></tr>
+    <tr><td>ONPE</td><td>2</td></tr>
     <tr><td>encuesta</td><td>2</td></tr>
-    <tr><td>primer</td><td>2</td></tr>
-    <tr><td>lugar</td><td>2</td></tr>
-    <tr><td>cusco</td><td>2</td></tr>
     <tr><td>falso</td><td>2</td></tr>
-    <tr><td>oficial</td><td>2</td></tr>
+    <tr><td>Senado</td><td>2</td></tr>
   </table>
 </section>
 
 <section>
-  <h2>Análisis de sentimiento (ejemplos)</h2>
+  <h2>Análisis de sentimiento (ejemplos de titulares)</h2>
   <table>
     <tr><th>Titular</th><th>Sentimiento</th></tr>
     <tr><td>ONPE gastará S/29 millones para la franja electoral</td><td>Neutral</td></tr>
     <tr><td>Alfonso López-Chau: “Quiero ganar en primera vuelta”</td><td>Positivo</td></tr>
-    <tr><td>Informe del JEE alerta omisión de información</td><td>Negativo</td></tr>
+    <tr><td>Informe del JEE alerta omisión de información por sentencia</td><td>Negativo</td></tr>
     <tr><td>Leonela Labra difundió una encuesta falsa</td><td>Negativo</td></tr>
-    <tr><td>Elecciones 2026: ¿qué es la valla electoral?</td><td>Neutral</td></tr>
   </table>
 </section>
 
 <section>
-  <h2>Análisis periodístico (Rol 3)</h2>
-
+  <h2>Análisis periodístico</h2>
   <p>
-    El presente análisis explora los resultados obtenidos a partir del scrapeo y
-    procesamiento de los titulares publicados en la sección “Elecciones” del
-    diario digital La República, con fecha de extracción 25 de enero de 2026.
+    El análisis de los titulares revela una clara centralidad de la fiscalización
+    legal y administrativa del proceso electoral. La reiteración de términos
+    vinculados a instituciones como el JNE, el JEE y la ONPE indica que la agenda
+    informativa prioriza el control, la supervisión y la legalidad de las
+    candidaturas.
   </p>
-
   <p>
-    El análisis de frecuencia léxica revela una clara centralidad del enfoque
-    institucional del proceso electoral, con énfasis en organismos como el JNE,
-    JEE y la ONPE.
+    Asimismo, se observa una fuerte personalización de la política. Los procesos
+    electorales son narrados a través de figuras individuales y controversias
+    específicas, desplazando el debate programático hacia un seguimiento de
+    trayectorias personales y conflictos legales.
   </p>
-
   <p>
-    El análisis de sentimiento muestra un predominio del tono neutral, con una
-    presencia relevante de sentimiento negativo asociado a conflictos,
-    cuestionamientos legales y desinformación.
+    El análisis de sentimiento muestra un predominio del tono neutral, coherente
+    con un registro informativo. No obstante, el sentimiento negativo adquiere
+    relevancia en noticias relacionadas con sanciones, denuncias o desinformación,
+    reforzando una narrativa de vigilancia crítica.
   </p>
+</section>
 
+<section>
+  <h2>Conclusión</h2>
   <p>
-    En conjunto, la cobertura electoral se construye como un espacio de
-    fiscalización permanente del poder político en la antesala de las
-    Elecciones Generales del Perú 2026.
+    En respuesta a la pregunta de investigación, se concluye que los temas
+    predominantes en las portadas digitales de la sección “Elecciones” de
+    <em>La República</em> son la fiscalización electoral, la institucionalidad del
+    proceso y la controversia política asociada a la viabilidad legal de las
+    candidaturas.
+  </p>
+  <p>
+    En conjunto, la agenda mediática del 25 de enero de 2026 revela un escenario
+    electoral judicializado, marcado por la cautela, el escrutinio público y la
+    vigilancia institucional, más que por el debate de propuestas programáticas.
   </p>
 </section>
 
